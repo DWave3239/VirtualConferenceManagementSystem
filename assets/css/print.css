@@ -1,0 +1,28 @@
+#content {
+    max-width: 100%;
+    margin: auto;
+}
+
+div.timezone.chooser {
+    display: none;
+}
+
+.schedule .day {
+    page-break-after: always;
+}
+
+.schedule .day .timecolumn {
+    vertical-align: top;
+}
+
+.schedule .day table tr {
+    border-bottom: 1px solid black;
+}
+
+.schedule .day .part-title .external-link {
+    display: block;    
+}
+
+.schedule .show-more, .schedule .show-less {
+    display: none;
+}

@@ -1,0 +1,148 @@
+/* body */
+body {
+    font-size: 1vw;
+}
+
+/* lists */
+.inline-list > li {
+    display: inline;
+}
+
+/* schedule */
+.schedule .hide { display: none; }
+.schedule .template, .template { display: none; }
+
+/* schedule full */
+.schedule.full {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* schedule full dynamic */
+.schedule.full.dynamic > .timezone.chooser { margin-bottom: 5px; }
+
+.schedule.full.dynamic .past { opacity: 0.88; }
+
+.schedule.full.dynamic .in_progress { border-width: 2px !important; }
+
+.schedule.full.dynamic div.show-more { margin: 10px; }
+
+.schedule.full.dynamic div.more > div.paper-entry {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.schedule.full .day .card-header { cursor: pointer; }
+
+.schedule.full.dynamic .day table {
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: calc(100% - 2px);
+}
+.schedule.full.dynamic .day td {
+    padding: 5px 0;
+    border: 1px solid black;
+}
+
+.modal-dialog.modal-customlarge {
+    width: 90%;
+    max-width: 90%;
+}
+
+#accordion .card-header {
+    cursor: pointer;
+}
+
+#jaas-container {
+    width: 100%;
+    position: absolute;
+    margin: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.flex-container-7, .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-container-7 > .card {
+    width: 15rem;
+    margin: 10px;
+}
+
+.flex-container > .card {
+    width: 18rem;
+    margin: 10px;
+}
+
+.card > a.btn.btn-primary {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.navBarIconWidth {
+    width: 20px;
+    text-align: center;
+}
+
+.statisticScreen {
+    height: 88vh;
+}
+
+.statisticScreen .col-10 {
+    height: 88vh;
+    overflow: auto;
+}
+
+.statisticScreen .row.vh-50 {
+    max-height: 44vh;
+    height: 44vh;
+    overflow: auto;
+}
+
+.statisticScreen .flex-container {
+    justify-content: start;
+}
+
+.statisticScreen > div:first-child > * {
+    margin-left: 0px;
+}
+
+.statisticScreen .statistics.card {
+    height: min-content;
+    margin: 0 10px 10px 10px;
+    max-width: 25%;
+}
+
+.row.statistics {
+    min-height: 88vh; 
+    justify-content: start; 
+    margin: inherit;
+}
+
+.statistics.card > .card-body {
+    padding-bottom: 0;
+}
+
+.statisticsDetail.card-header {
+    padding: 5px;
+    text-align: center;
+}
+
+.stickyHeader {
+    position: sticky;
+    top: 0;
+    opacity: 1;
+}
+
+/* smaller screens */
+@media screen and (max-width: 600px) {
+    .modal-dialog.modal-customlarge {
+        max-width: 95%;
+        width: 95%;
+        padding: 0;
+    }
+}
