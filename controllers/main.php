@@ -143,6 +143,8 @@ class main extends Base {
   }
 
   function webhook(){
+    if(!isset($_SERVER['HTTP_X_JAAS_SIGNATURE'])) die('DENIED');
+
     // fetch stuff
     $signature = explode(',', $_SERVER['HTTP_X_JAAS_SIGNATURE']);
     $headers = [];
@@ -176,7 +178,7 @@ class main extends Base {
     if(hash_equals($signature, base64_encode(hex2bin($hmac)))){
       $userId = $payload['data']['id'] ?? -1;
       $roomName = substr($payload['fqn'], strlen($payload['appId'])+1);
-      $this->db->insert('webhookEvents', array('userId'=>$userId, 'eventName'=>$payload['eventType'], 'roomName'=>$roomName, 'data'=>$payload, 'time'=>time()));
+      $this->db->insert('webhookEvents', array('userId'=>$userId, 'eventName'=>$payload['eventType'], 'roomName'=>$roomName, 'data'=>$payload, 'timestamp'=>time()));
     }
   }
 }
