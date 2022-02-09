@@ -4,13 +4,13 @@
             <input type="text" class="form-control" id="title" name="title" placeholder="Title">
         </div>
         <div class="col">
-            <input type="text" class="form-control" id="last_name" name="full_name" placeholder="Full name*">
+            <input type="text" class="form-control" id="full_name" name="full_name" placeholder="Full name*">
         </div>
     </div>
 
     <div class="row form-group">
         <div class="col">
-            <input type="text" class="form-control" id="last_name" name="affiliation" placeholder="Affiliation*">
+            <input type="text" class="form-control" id="affiliation" name="affiliation" placeholder="Affiliation*">
         </div>
     </div>
 
