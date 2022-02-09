@@ -178,7 +178,7 @@ class main extends Base {
     if(hash_equals($signature, base64_encode(hex2bin($hmac)))){
       $userId = $payload['data']['id'] ?? -1;
       $roomName = substr($payload['fqn'], strlen($payload['appId'])+1);
-      $this->db->insert('webhookEvents', array('userId'=>$userId, 'eventName'=>$payload['eventType'], 'roomName'=>$roomName, 'data'=>$payload, 'timestamp'=>time()));
+      $this->db->insert('webhookEvents', array('userId'=>$userId, 'eventName'=>$payload['eventType'], 'roomName'=>$roomName, 'data'=>$payload));
     }
   }
 }
