@@ -85,7 +85,7 @@ class main extends Base {
       }else{
         $price = 280;
         for($i=1; $i<4; $i++){
-          if(!empty($_POST['additional_paper'+$i])){
+          if(!empty($_POST['additional_paper'.$i])){
             $price += 280;
           }
         }

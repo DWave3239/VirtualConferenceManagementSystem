@@ -130,6 +130,7 @@ class Scheduler2 {
 
                             target = time_from;
                             target.classList.remove("table-success");
+                            removeClassFromSet(target.getElementsByClassName("table-success"), "table-success");
                             removeClassFromSet(target.getElementsByClassName("in_progress"), "in_progress", function(e){e.style.removeProperty("background");});
                         
                             row = row.nextElementSibling;
